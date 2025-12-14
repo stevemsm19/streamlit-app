@@ -3,10 +3,6 @@ from streamlit.runtime.uploaded_file_manager import UploadedFile
 
 from typing import List, Optional, Tuple
 
-from app.frontend.services.api_service import upload_files
-from app.frontend.utils.messages import show_temporary_message
-
-
 def upload_documents_sidebar() -> Optional[List[UploadedFile]]:
     with st.sidebar:
         st.subheader("Cargar Documentos")
@@ -56,5 +52,4 @@ def set_variables_sidebar() -> Tuple[int, float]:
 
 def handle_sidebar() -> Tuple[int, float]:
     upload_documents_sidebar()
-    # handle_upload_button(documents)
     return set_variables_sidebar()
