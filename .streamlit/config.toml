@@ -1,0 +1,8 @@
+[client]
+showErrorDetails = "true"
+
+[theme]
+base="light"
+
+[server]
+runOnSave = true
