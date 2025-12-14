@@ -13,7 +13,7 @@ st.title("📚 Fuentes")
 st.write("Aquí puedes descargar los recursos utilizados por el sistema:")
 
 DOWNLOAD_BASE_URL = (
-    f"http://{SETTINGS.api_host}/api/v1/documents/download"
+    f"https://{SETTINGS.api_host}/api/v1/documents/download"
 )
 
 documents_name, error = get_documents_name()
