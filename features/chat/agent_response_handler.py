@@ -1,7 +1,7 @@
 from typing import List, Optional
 import streamlit as st
 
-from app.frontend.services.api_service import get_agent_response
+from services.api_service import get_agent_response
 
 
 def generate_agent_response(

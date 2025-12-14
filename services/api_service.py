@@ -6,7 +6,7 @@ from streamlit.runtime.uploaded_file_manager import UploadedFile
 
 from typing import List, Optional, Tuple, Dict, Any
 
-from app.frontend.utils.constants.endpoints import (
+from utils.constants.endpoints import (
     DOCUMENTS_ENDPOINT,
     EMBEDDING_ENDPOINT,
     PREDICT_CASH_ENDPOINT,
@@ -14,7 +14,7 @@ from app.frontend.utils.constants.endpoints import (
     get_documents_name_ENDPOINT,
 )
 
-from app.frontend.config.settings import get_settings
+from config.settings import get_settings
 
 SETTINGS = get_settings()
 base_url = f"http://{SETTINGS.api_host}:{SETTINGS.api_port}/api/v1/"

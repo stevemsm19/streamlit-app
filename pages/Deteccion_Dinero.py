@@ -1,8 +1,8 @@
 import streamlit as st
 from PIL import Image
 
-from app.frontend.services.api_service import detect_cash, get_agent_response
-from app.frontend.utils.messages import show_temporary_message
+from services.api_service import detect_cash, get_agent_response
+from utils.messages import show_temporary_message
 
 st.set_page_config(
     page_title="Detector de billetes",

@@ -1,11 +1,12 @@
 from typing import Optional
 import streamlit as st
 
-from app.frontend.features.chat.chat_sidebar import handle_sidebar
-from app.frontend.features.chat.chat_state import init_chat_state
-from app.frontend.features.chat.user_prompt_handler import get_user_prompt
-from app.frontend.features.chat.chat_handler import handle_chat_flow
-from app.frontend.utils.session_state import apply_session_states
+
+from features.chat.chat_sidebar import handle_sidebar
+from features.chat.chat_state import init_chat_state
+from features.chat.user_prompt_handler import get_user_prompt
+from features.chat.chat_handler import handle_chat_flow
+from utils.session_state import apply_session_states
 
 
 def init_view_state() -> None:

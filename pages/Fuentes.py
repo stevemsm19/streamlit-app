@@ -1,7 +1,7 @@
 import os
 import streamlit as st
 
-from app.frontend.services.api_service import get_documents_name
+from services.api_service import get_documents_name
 
 current_page = "sources"
 st.session_state.last_page = current_page

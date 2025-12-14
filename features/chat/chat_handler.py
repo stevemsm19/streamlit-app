@@ -1,10 +1,10 @@
 from typing import Optional
 import streamlit as st
 
-from app.frontend.features.chat.agent_response_handler import generate_agent_response
-from app.frontend.features.chat.user_prompt_handler import add_user_prompt
-from app.frontend.services.api_service import get_documents_name, upload_files
-from app.frontend.utils.constants.chat_suggestions import CHAT_SUGGESTIONS
+from features.chat.agent_response_handler import generate_agent_response
+from features.chat.user_prompt_handler import add_user_prompt
+from services.api_service import get_documents_name, upload_files
+from utils.constants.chat_suggestions import CHAT_SUGGESTIONS
 
 
 def display_chat_intro() -> None:
