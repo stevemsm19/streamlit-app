@@ -17,7 +17,7 @@ from utils.constants.endpoints import (
 from config.settings import get_settings
 
 SETTINGS = get_settings()
-base_url = f"http://{SETTINGS.api_host}:{SETTINGS.api_port}/api/v1/"
+base_url = f"http://{SETTINGS.api_host}/api/v1/"
 
 
 def upload_files(
