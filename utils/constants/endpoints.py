@@ -1,5 +1,5 @@
 DOCUMENTS_ENDPOINT = "documents/add"
 SEARCH_ENDPOINT = "chat"
 EMBEDDING_ENDPOINT = "embeddings"
-get_documents_name_ENDPOINT = "documents/names"
+DOCUMENTS_NAME_ENDPOINT = "documents/names"
 PREDICT_CASH_ENDPOINT = "predict"

@@ -9,8 +9,10 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("🖼️ Detector de billetes")
-st.write("Sube una imagen y presiona **Detectar** para que el sistema inicie la detección de billetes.")
+st.title("🖼️ Detector de Billetes Colombianos")
+st.write(
+    "Sube una imagen y presiona **Detectar** para que el sistema inicie la detección de billetes."
+)
 
 st.sidebar.header("Cargar imagen")
 
@@ -66,7 +68,7 @@ with col1:
             )
         else:
             image = Image.open(uploaded_file)
-            st.image(image, use_container_width=True)
+            st.image(image)
     else:
         st.info("👈 Sube una imagen desde el panel lateral")
 
@@ -74,7 +76,7 @@ with col2:
     st.subheader("Acciones")
 
     if uploaded_file:
-        detectar = st.button("🔍 Detectar", use_container_width=True)
+        detectar = st.button("🔍 Detectar")
 
         if detectar:
 
@@ -107,6 +109,8 @@ with col2:
 
                 if error:
                     st.error(f"Error: {error}")
+                elif response is None:
+                    st.error("No se recibió respuesta del agente.")
                 else:
                     reply = response.get("reply", "No se recibió respuesta")
                     st.subheader("Resultados")
