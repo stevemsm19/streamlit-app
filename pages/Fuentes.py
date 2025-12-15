@@ -1,9 +1,9 @@
 import streamlit as st
 
 from services.api_service import get_documents_name
-from config.settings import get_settings
+from config.settings import settings
 
-SETTINGS = get_settings()
+setting = settings()
 
 current_page = "sources"
 st.session_state.last_page = current_page
@@ -13,7 +13,7 @@ st.title("📚 Fuentes")
 st.write("Aquí puedes descargar los recursos utilizados por el sistema:")
 
 DOWNLOAD_BASE_URL = (
-    f"https://{SETTINGS.api_host}/api/v1/documents/download"
+    f"https://{settings.api_host}/api/v1/documents/download"
 )
 
 documents_name, error = get_documents_name()

@@ -15,7 +15,7 @@ from utils.constants.endpoints import (
 
 from config.settings import settings
 
-base_url = f"http://{settings.api_host}/api/v1/"
+base_url = f"https://{settings.api_host}/api/v1/"
 
 
 def upload_files_payload(
