@@ -3,8 +3,6 @@ import streamlit as st
 from services.api_service import get_documents_name
 from config.settings import settings
 
-setting = settings()
-
 current_page = "sources"
 st.session_state.last_page = current_page
 
